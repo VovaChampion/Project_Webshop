@@ -16,7 +16,7 @@ body {
   }
 
 .conteiner > * {
-    padding: 5px;
+    -padding: 5px;
     flex: 1 100%;
 }
 /* Header "Vita tänder" */
@@ -77,6 +77,10 @@ body {
     border-radius:5px;
     margin: 1px;  
 }
+.image_product {
+    width: 75%;
+    height: 75%;
+}
 
 .footer {
     padding: 50px;
@@ -122,6 +126,11 @@ body {
 }
 .product-item{
     width: 100%;
+    max-height: 400px;
     padding: 0;
 }
+/*.image_product {
+    width: 50%;
+    height: 50%;
+}*/
 }
