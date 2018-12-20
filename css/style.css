@@ -29,6 +29,52 @@ body {
 .header h1 {
     font-size: 50px;
 }
+/* Search form */
+
+
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+	margin-left: 50%;
+} 
+input[type="search"] {
+	box-sizing: border-box;
+	background: white;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+	line-height: normal;
+    max-height: 3em;
+}
+button[type="submit"] {
+	box-sizing: border-box;
+	border-radius: 0px 2px 2px 0px;
+	background: rgb(109, 174, 235);
+	font-weight: 300;
+	text-transform: uppercase;
+	color: black;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+    cursor: pointer;	
+}
+button[type="submit"]:hover {
+	background: blue;
+}
+
+input[type="search"] {
+	flex: 2 0 150px;
+}
+button[type="submit"] {
+	flex: 1 0 30px;
+}
+
 
 /* Style nav */
 .nav {
@@ -118,7 +164,8 @@ body {
 @media screen and (max-width: 500px) {
 .nav {
     float: none;
-    width: 100%;
+    display: block;
+    -width: 100%;
 }
 .product {
     flex-wrap: wrap; 
@@ -129,6 +176,10 @@ body {
     max-height: 400px;
     padding: 0;
 }
+.search-form{
+    width: 80%;
+	margin-left: 10%;
+} 
 /*.image_product {
     width: 50%;
     height: 50%;
