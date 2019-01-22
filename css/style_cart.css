@@ -1,0 +1,268 @@
+@import "normalize";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1% 3% 1% 3%; 
+    background: #fcfcfc;
+}
+/* .conteiner {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center;
+  }
+
+.conteiner > * {
+    -padding: 5px;
+    flex: 1 100%;
+} */
+/* Header "Vita tänder" */
+.header {
+    padding: 20px;
+    text-align: left;
+    background: rgb(219, 238, 238);
+}
+
+.header h1 {
+    font-size: 50px;
+}
+/* Search form */
+
+
+.search-form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+	margin-left: 50%;
+} 
+input[type="search"] {
+	box-sizing: border-box;
+	background: white;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+	line-height: normal;
+    max-height: 3em;
+}
+button[type="submit"] {
+	box-sizing: border-box;
+	border-radius: 0px 2px 2px 0px;
+	background: rgb(109, 174, 235);
+	font-weight: 300;
+	text-transform: uppercase;
+	color: black;
+	padding: 0.35em 0.75em;
+	border: none;
+	font-size: 1.1em;
+	text-decoration: none;
+    cursor: pointer;	
+}
+button[type="submit"]:hover {
+	background: blue;
+}
+
+input[type="search"] {
+	flex: 2 0 150px;
+}
+button[type="submit"] {
+	flex: 1 0 30px;
+}
+
+
+/* Style nav */
+.nav {
+    overflow: hidden;
+    background-color: rgb(109, 174, 235);
+    border-radius:10px;
+}
+/*nav menu*/
+.menu_item {
+    display: inline-block;
+    margin:0 5px;
+}
+
+/* Style nav links*/
+.nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    border-radius:10px;
+}
+
+.nav a:hover {
+    background: rgb(219, 238, 238);
+    color: black;
+}
+/* 
+.image_banner {
+    width: 100%;
+}
+.product {
+    display: inline-flex;
+    justify-content: center;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.product-item {
+    float: left;
+    display: block;
+    max-height: 450px;
+    width: 25%;
+    padding: 5px;
+    background: rgb(126, 203, 233);
+    border-radius:5px;
+    margin: 1px;  
+}
+.image_product {
+    width: 75%;
+    height: 75%;
+} */
+
+.container {
+	border: 1px solid gray;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(18, 1fr);
+}
+
+.content1 {
+	border: 1px solid black;
+	background-color: lightgray;
+	display: grid;
+	grid-column-start:2;
+	grid-column-end: 6;
+	grid-row-start: 4;
+	grid-row-end: 9;
+}
+
+.content2 {
+	border: 1px solid black;
+	background-color: lightgray;
+	display: grid;
+	grid-column-start:2;
+	grid-column-end: 6;
+	grid-row-start: 11;
+	grid-row-end: 16;
+}
+
+.aside {
+	border: 1px solid black;
+	background-color: lightgray;
+	display: grid;
+	grid-column-start:8;
+	grid-column-end: 11;
+	grid-row-start: 5;
+	grid-row-end: 9;
+}
+
+.homebutton {
+	display: grid;
+	grid-column-start:10;
+	grid-column-end: 11;
+	grid-row-start: 3;
+	grid-row-end: 4;
+}
+
+.varukorg {
+	display: grid;
+	grid-column-start:2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+content > img {
+	max-height:120px;
+	margin-left: 2em;
+	margin-top: 2em;
+	border: 1px solid black;
+}
+
+content > div {
+	display: inline;
+	max-width: 25%;
+	float: right;
+}
+
+content > p {
+	margin-left: 1em;
+	max-width: 50%;
+}
+
+aside > p {
+	align-content: center;
+	margin-top: 5em;
+	margin-left: 1em;
+	margin-right:1em;
+	margin-bottom: 1em;
+}
+
+.footer {
+    padding: 50px;
+    text-align: left;
+    background: rgb(219, 238, 238);
+}
+
+.footer a {
+    display: inline-block;
+    text-align: left;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius:10px;
+    color: black;
+}
+.footer a:hover {
+    background: white;
+    color: blue;
+}
+
+@media screen and (max-width: 1000px) {
+.banner {   
+    width: 100%;
+    padding: 0;
+}
+.product {
+    flex-wrap: wrap; 
+}
+.product-item{
+    float: none;
+    width: 48%;
+}
+}
+
+@media screen and (max-width: 500px) {
+.nav {
+    float: none;
+    display: block;
+    -width: 100%;
+}
+.product {
+    flex-wrap: wrap; 
+    margin: 0;
+}
+.product-item{
+    width: 100%;
+    max-height: 400px;
+    padding: 0;
+}
+.search-form{
+    width: 80%;
+	margin-left: 10%;
+} 
+/*.image_product {
+    width: 50%;
+    height: 50%;
+}*/
+}
