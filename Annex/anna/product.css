@@ -1,0 +1,53 @@
+html, body {
+    line-height: 1.5em;
+    font-size: 100%;
+    background-color: grey;
+  }
+
+main {
+    margin: 0 auto;
+    max-width: 940px; 
+    background-color: cadetblue;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section {
+    width: 32%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+h2 {
+    background-color: grey;
+    color: black;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    width: 49%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
